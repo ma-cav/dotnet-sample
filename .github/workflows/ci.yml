@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-push:
+    uses: mcavalcanti81/devops-libs/.github/workflows/build-dotnet.yml@main
+    with:
+      image_name: mcavalcanti81/dotnet-sample
+      registry: docker.io
+    secrets:
+      REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
+      REGISTRY_PASS: ${{ secrets.REGISTRY_PASS }}
+
