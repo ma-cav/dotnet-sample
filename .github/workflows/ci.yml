@@ -15,4 +15,3 @@ jobs:
     secrets:
       REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
       REGISTRY_PASS: ${{ secrets.REGISTRY_PASS }}
-
