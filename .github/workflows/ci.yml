@@ -7,9 +7,9 @@ on:
 
 jobs:
   build-and-push:
-    uses: mcavalcanti81/devops-libs/.github/workflows/build-dotnet.yml@main
+    uses: ma-cav/devops-libs/.github/workflows/build-dotnet.yml@main
     with:
-      image_name: mcavalcanti81/dotnet-sample
+      image_name: ma-cav/dotnet-sample
       registry: docker.io
     secrets:
       REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
