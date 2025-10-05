@@ -12,7 +12,7 @@ on:
 
 jobs:
   build:
-    uses: ma-cav/devops-libs/.github/workflows/stages/docker/docker.build.yml@main
+    uses: ma-cav/devops-libs/.github/workflows/docker.build.yml@main
     with:
       language: ${{ vars.LANGUAGE }}
       image_name: mcavalcanti/dotnet-sample
