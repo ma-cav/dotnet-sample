@@ -31,5 +31,3 @@ jobs:
       manifests_path: ma-cav/devops-libs/.github/workflows/manifests/
       cluster_type: kind
 
-
-      
