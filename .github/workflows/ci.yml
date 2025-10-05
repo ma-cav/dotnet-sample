@@ -4,16 +4,15 @@ on:
   push:
     branches:
       - main
-      - develop
+  workflow_dispatch:
 
 jobs:
-  build-and-push:
-    uses: ma-cav/devops-libs/.github/workflows/build-dotnet.yml@main
+  build:
+    uses: ma-cav/devops-libs/.github/workflows/stages/docker/docker.build.yml@main
     with:
+      language: ${{ vars.LANGUAGE }}
       image_name: mcavalcanti/dotnet-sample
       registry: docker.io
     secrets:
       REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
       REGISTRY_PASS: ${{ secrets.REGISTRY_PASS }}
-
-      
