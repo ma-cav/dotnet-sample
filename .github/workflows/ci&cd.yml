@@ -28,5 +28,5 @@ jobs:
     with:
       image: mcavalcanti/dotnet-sample:${{ github.run_number }}
       namespace: ${{ vars.NAMESPACE }}
-      manifests_path: ma-cav/devops-libs/.github/workflows/manifests/
+      manifests_path: .github/workflows/manifests/
       cluster_type: kind
