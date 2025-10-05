@@ -31,4 +31,3 @@ jobs:
       manifests_path: .github/workflows/manifests/
       cluster_type: kind
 
-      
