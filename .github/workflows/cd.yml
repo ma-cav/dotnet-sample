@@ -10,7 +10,7 @@ on:
 
 jobs:
   deploy:
-    uses: ma-cav/devops-libs/.github/workflows/stages/docker/docker.deploy.yml@main
+    uses: ma-cav/devops-libs/.github/workflows/docker.deploy.yml@main
     with:
       # Aqui você pode buscar automaticamente a última tag do CI
       image: mcavalcanti/dotnet-sample:${{ github.run_number }}
