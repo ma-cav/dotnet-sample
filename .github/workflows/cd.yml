@@ -14,6 +14,8 @@ jobs:
     with:
       # Aqui você pode buscar automaticamente a última tag do CI
       image: mcavalcanti/dotnet-sample:${{ github.run_number }}
-      namespace: ${{ env.NAMESPACE }}
+      namespace: ${{ vars.NAMESPACE }}
       manifests_path: manifests/
       cluster_type: kind
+ 
+      
