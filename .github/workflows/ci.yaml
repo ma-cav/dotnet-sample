@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    uses: ma-cav/devops-libs/.github/workflows/templates/build-push.yaml@main
+    uses: ma-cav/devops-libs/.github/workflows/build-push.yaml@main
     with:
       containerRegistry: docker.io
       imageRepository: mcavalcanti/dotnet-sample
@@ -14,4 +14,3 @@ jobs:
       dockerFilePath: ./Dockerfile
     secrets: inherit
 
-    
