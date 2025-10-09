@@ -1,0 +1,15 @@
+name: CI Pipeline
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    uses: ma-cav/devops-libs/.github/workflows/templates/build-push.yaml@main
+    with:
+      containerRegistry: docker.io
+      imageRepository: mcavalcanti/dotnet-sample
+      versionTag: v1.0.${{ github.run_number }}
+      dockerFilePath: ./Dockerfile
+    secrets: inherit
