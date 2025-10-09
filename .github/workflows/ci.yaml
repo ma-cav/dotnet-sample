@@ -13,3 +13,5 @@ jobs:
       versionTag: v1.0.${{ github.run_number }}
       dockerFilePath: ./Dockerfile
     secrets: inherit
+
+    
