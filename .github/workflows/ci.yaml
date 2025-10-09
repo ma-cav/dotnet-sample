@@ -12,4 +12,6 @@ jobs:
       imageRepository: mcavalcanti/dotnet-sample
       versionTag: v1.0.${{ github.run_number }}
       dockerFilePath: ./Dockerfile
-    secrets: inherit
+    secrets:
+      REGISTRY_USER: ${{ secrets.REGISTRY_USER }}
+      REGISTRY_PASS: ${{ secrets.REGISTRY_PASS }}
